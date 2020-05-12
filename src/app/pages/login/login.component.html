@@ -1,0 +1,31 @@
+<img src="../../assets/img/ark1.jpg" alt="Responsive image" class="img-fluid">
+<br><br><br><br>
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-6 col-md-4">
+      <div class="card" style="width: 22rem">
+        <div class="card-header">Seguimiento de PQRSF</div>
+        <div class="card-body">
+          <form>
+            <div class="row">
+              <div class="col-md 5 pr-3">
+                <div class="input-group">
+                  <input [(ngModel)]="login.id" name="user" type="text" class="form-control" placeholder="Radicado">
+                  <div class="input-group-append">
+                    <span class="input-group-text"><i class="now-ui-icons users_single-02"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <br>
+          <div class="row">
+            <div class="col-sm-8">
+              <button class="btn btn-primary btn-round col-md-12" (click)="doLogin()">BUSCAR</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

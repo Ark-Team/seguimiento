@@ -1,0 +1,28 @@
+<div class="header bg-gradient-dark pb-8 pt-5 pt-md-7">
+</div>
+<div class="container-fluid mt--9">
+  <div class="row">
+    <div class="col">
+      <div class="card shadow" *ngIf="show">
+        <div class="card-header border-0">
+          <h2 class="mb-0">Seguimiento de PQRS</h2> <br>
+          <h4 class="mb-0"> Radicado N°: <mark><strong>{{id}}</strong></mark></h4>
+        </div>
+        <div class="card-body border-0">
+          <div class="form-group">
+            <h4 class="mb-0 text-right"> Detalle N°: <mark>{{detallePqrs.dpqrsId}}</mark></h4>
+            <h4 class="mb-0 text-right"> Fecha: {{detallePqrs.fechaModificacion | date: "dd, MMMM yyyy"}}</h4>
+            <label for="exampleFormControlTextarea1">Descripcion del detalle:</label>
+            <textarea style="resize: none" class="form-control" id="exampleFormControlTextarea1"
+              disabled> {{detallePqrs.descripcion}}</textarea>
+          </div>
+          <button class="btn btn-icon btn-default" type="button" [routerLink]="['/admin']">
+            <span class="btn-inner--icon"><i class="ni ni-bold-left"></i></span>
+            <span class="btn-inner--text">Atras</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
